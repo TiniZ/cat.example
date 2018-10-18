@@ -1,0 +1,115 @@
+/*********************************The Common Css Of All Page In Site *************************************/
+@font-face {
+    font-family: "NotoSansCJK-Regular";
+    src: url("../fonts/NotoSansCJK-Regular.otf");
+}
+
+* {
+ /*   font-family: NotoSansCJK-Regular, serif;*/
+    box-sizing: initial;
+}
+
+body, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding-right: 1%;
+    padding-left: 1%;
+    overflow: hidden;
+    z-index: 100;
+}
+
+/* PC client */
+@media screen and (min-width: 769px) {
+    section.mobile_header {
+        display: none;
+    }
+
+    #header {
+        /*position: fixed;*/
+        /*width: 1200px;*/
+        height: 3.4rem;
+        line-height: 3.4rem;
+        padding: .3rem 1%;
+        font-size: 40px;
+        font-family:'楷体';
+        box-sizing: initial;
+        margin: 0 auto;
+       
+    }
+
+    section.pc_header {
+        max-width: 1920px;
+        max-height: 100%;
+        line-height: 3.4rem;
+        height: 3.4rem;
+        margin: 0 auto;
+    }
+
+    section.pc_header ul {
+        width: 99%;
+        height: 3.4rem;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    section.pc_header section.logo_area {
+        max-width: 10%;
+        min-width: 10%;
+        line-height: 3.4rem;
+        height: 3.4rem;
+        float: left;
+        text-align: left;
+    }
+
+    section.pc_header section.logo_area img {
+        max-height: 100%;
+        position: relative;
+        line-height: 3.4rem;
+        vertical-align: middle;
+    }
+
+    section.pc_header nav.pc_nav {
+        max-width: 80%;
+        min-width: 80%;
+        float: left;
+        text-align: left;
+        height: 3.4rem;
+    }
+
+    section.pc_header section.index_login_area {
+        max-width: 60%;
+        min-width: 60%;
+        float: left;
+        text-align: left;
+        height: 3.4rem;
+    }
+
+    section.pc_header nav.pc_nav ul li {
+        position: relative;
+        list-style-type: none;
+        display: inline;
+        margin-right: 5%;
+        margin-left: 5%;
+        
+    }
+
+    section.pc_header section.index_login_area ul li {
+        list-style: none;
+        display: inline;
+        box-sizing: initial;
+        margin-left: 3%;
+    }
